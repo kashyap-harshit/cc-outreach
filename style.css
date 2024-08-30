@@ -1,66 +1,67 @@
-*{
-    margin: 0;
-    padding: 0;
+/* Reset styles to ensure consistency across different browsers */
+* {
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
 }
 
-.card{
-    background-color: #1d1c1a;
-    height: 500px;
-    width: 350px;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 3px 3px 5px black;
-}
-body{
-    background-color: #c85528;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Body styling for the overall page layout */
+body {
+    background-color: #D84B0E; /* Sets a deep orange-red background color */
+    height: 100vh; /* Makes the body take up the full height of the viewport */
+    display: flex; /* Enables Flexbox for center alignment */
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
 }
 
-.icon{
-    width: 30%;
-    border-radius: 60%;
-    margin: 15px 0px;
+/* Main card styling for the content container */
+.card {
+    background-color: #1d1c1a; /* Sets a dark background color for contrast */
+    height: 500px; /* Fixed height for the card */
+    width: 350px; /* Fixed width for the card */
+    display: flex; /* Uses Flexbox to layout children */
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Centers child elements horizontally */
+    border-radius: 10px; /* Rounds the corners of the card */
+    box-shadow: 3px 3px 5px black; /* Adds a subtle shadow for depth */
+    padding-bottom: 15px; /* Adds space at the bottom inside the card */
 }
 
-h2, h3, h4{
-    margin: 2px 0px;
-}
-h2{
-    color: #c85528;
-}
-
-h3{
-    color: #c85528;
-    
-}
-h4{
-
-    color: #c85528;
+/* Profile image styling */
+.icon {
+    width: 30%; /* Sets the width of the image to 30% of the card width */
+    border-radius: 60%; /* Creates a circular look for the image */
+    margin: 15px 1px; /* Adds space around the image */
 }
 
-.table{
-    display: flex;
-    width: 75%;
-    justify-content: space-between;
-    margin-top: 10px;
+/* Common heading styles for <h2>, <h3>, and <h4> */
+h2, h3, h4 {
+    margin: 2px 0; /* Minimal margin to reduce spacing between headings */
+    color: #B0B0AF; /* Light grey color for headings for readability */
 }
 
-.high{
-    background-color: #c85528c7;
-    color: black;
+/* Table styling that holds subjects and marks columns */
+.table {
+    display: flex; /* Uses Flexbox to arrange subject and marks columns side by side */
+    width: 75%; /* Sets the table width to 75% of the card */
+    justify-content: space-between; /* Distributes space between columns evenly */
+    margin-top: 10px; /* Adds space above the table */
 }
 
-.sub{
-    width: 85%;
+/* Styling for table headers (Subjects and Marks) */
+.high, .marks-header {
+    background-color: #4E1D07; /* Sets a dark reddish-brown background for headers */
+    color: #B0B0AF; /* Light grey text color to match the overall theme */
+    font-weight: bold; /* Makes the text bold to emphasize headers */
+    padding: 2px 10px; /* Adds padding inside the headers for better spacing */
 }
 
-.sub h3, .marks h3{
-    padding: 2px 10px;
-    border-bottom: 1px solid;
+/* Styling for the subjects column inside the table */
+.sub {
+    width: 85%; /* Makes the subject column wider for emphasis */
+}
+
+/* Styling for subjects and marks text within the table */
+.sub h3, .marks h3 {
+    padding: 2px 10px; /* Adds padding inside each row for spacing */
+    border-bottom: 1px solid #D84B0E; /* Adds a border below each row for separation */
 }
